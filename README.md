@@ -13,7 +13,7 @@ The objective is to answer practical business questions and provide a clear view
 
 # 📊 Dashboard Preview
 
-![Customer Behavior Dashboard](images/dashboard.png)
+![Customer Behavior Dashboard](customer_behavior_dashboard.png)
 
 
 ---
