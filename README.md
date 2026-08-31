@@ -228,9 +228,6 @@ Gender and age-group analysis provides additional customer-level context for und
 
 ---
 
-# 🧠 Business Questions 
-
-The SQL analysis addresses **10 practical business questions**:
 
 # 🧠 Business Questions & Answers
 
