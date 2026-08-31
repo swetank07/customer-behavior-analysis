@@ -1,2 +1,306 @@
-# customer-behavior-analysis
-Customer Behavior Analysis using Python, SQL and Power BI
+# Customer Behavior Analysis
+
+> An end-to-end data analytics project to understand customer purchasing behavior, spending patterns, product performance, discounts, subscriptions, shipping preferences, customer segments, and revenue contribution using **Python, SQL, and Power BI**.
+
+---
+
+## 📌 Project Overview
+
+Understanding customer behavior is essential for identifying purchasing patterns, evaluating customer engagement, and supporting data-driven business decisions.
+
+This project analyzes customer transaction data to answer practical business questions around:
+
+* Customer spending behavior
+* Revenue contribution
+* Product performance
+* Discount usage
+* Subscription behavior
+* Shipping preferences
+* Customer segmentation
+* Repeat purchasing behavior
+* Age-group performance
+* Category-level sales and revenue
+
+The analysis combines **Python-based data analysis, SQL business queries, and a Power BI dashboard** to transform raw customer data into meaningful business insights.
+
+---
+
+## 🎯 Problem Statement
+
+Businesses generate large amounts of customer transaction data, but raw data alone does not provide clear answers to important business questions.
+
+The objective of this project is to analyze customer behavior and identify actionable patterns by answering questions such as:
+
+* Which customer groups generate more revenue?
+* Which customers spend above the average purchase amount despite using discounts?
+* Which products receive the highest customer ratings?
+* How does spending differ between Standard and Express shipping?
+* Do subscribed customers generate higher spending and revenue?
+* Which products have the highest discount usage?
+* How can customers be categorized into New, Returning, and Loyal segments?
+* Which products are most frequently purchased within each category?
+* Are repeat buyers more likely to subscribe?
+* Which age groups contribute the most revenue?
+
+---
+
+## 📊 Key Performance Indicators
+
+| KPI                        |      Value |
+| -------------------------- | ---------: |
+| 👥 Total Customers         |   **3.9K** |
+| 💰 Average Purchase Amount | **$59.76** |
+| ⭐ Average Review Rating    |   **3.75** |
+| 🔔 Subscription Rate       |    **27%** |
+| 🚫 Non-Subscription Rate   |    **73%** |
+
+The Power BI dashboard presents these KPIs along with category, gender, shipping, subscription, and age-group analysis.
+
+---
+
+## 🔎 Key Insights
+
+### 1. Customer Subscription
+
+The dashboard shows that **27% of customers are subscribed**, while **73% are not subscribed**.
+
+This indicates a significantly larger non-subscriber base, making subscription conversion an important area for further customer-retention analysis.
+
+### 2. Customer Spending
+
+The overall **average purchase amount is $59.76**, providing a benchmark for identifying customers whose purchases are above the overall average.
+
+The SQL analysis specifically identifies customers who used a discount while still spending at or above the average purchase amount.
+
+### 3. Product Ratings
+
+Product performance is evaluated using average review ratings, with SQL used to identify the **top 5 products with the highest average ratings**.
+
+### 4. Discount Behavior
+
+Discount effectiveness is analyzed by calculating the percentage of purchases made using discounts for each product.
+
+The analysis identifies the **top 5 products with the highest discount purchase rate**.
+
+### 5. Customer Segmentation
+
+Customers are segmented according to their number of previous purchases:
+
+* **New:** 1 previous purchase
+* **Returning:** 2–10 previous purchases
+* **Loyal:** More than 10 previous purchases
+
+This segmentation helps distinguish customer groups according to their purchasing history.
+
+### 6. Category & Product Performance
+
+The SQL analysis identifies the **top 3 most purchased products within each category**, allowing product-level performance to be compared within individual categories.
+
+The Power BI dashboard further visualizes revenue and sales across:
+
+* Clothing
+* Accessories
+* Footwear
+* Outerwear
+
+### 7. Repeat Buyers & Subscription
+
+The project investigates whether customers with **more than 5 previous purchases** are also likely to subscribe.
+
+This analysis compares repeat buyers across subscription status.
+
+### 8. Age-Group Revenue
+
+Revenue contribution is analyzed across different age groups, including:
+
+* Young Adult
+* Middle-aged
+* Adult
+* Senior
+
+The dashboard provides both revenue and sales views by age group.
+
+---
+
+## 🧠 Business Questions Answered
+
+| #  | Business Question                 | Analysis                                                      |
+| -- | --------------------------------- | ------------------------------------------------------------- |
+| 01 | Revenue by gender                 | Compares total revenue generated by male and female customers |
+| 02 | Discount + above-average spending | Identifies discounted purchases at or above average spend     |
+| 03 | Highest-rated products            | Finds top 5 products by average review rating                 |
+| 04 | Shipping comparison               | Compares average purchase amount for Standard vs Express      |
+| 05 | Subscription performance          | Compares customer count, average spend and total revenue      |
+| 06 | Discount-heavy products           | Finds top 5 products by discount purchase rate                |
+| 07 | Customer segmentation             | Classifies customers as New, Returning or Loyal               |
+| 08 | Top products by category          | Finds top 3 purchased products within each category           |
+| 09 | Repeat buyers & subscription      | Examines subscription status among repeat buyers              |
+| 10 | Age-group revenue                 | Measures revenue contribution by age group                    |
+
+## These questions are directly represented in the SQL analysis.
+
+## 🛠️ Tools & Technologies
+
+### Data Analysis
+
+* Python
+* Pandas
+* Jupyter Notebook
+
+### Database & Querying
+
+* SQL
+* PostgreSQL
+
+### Data Visualization
+
+* Microsoft Power BI
+
+---
+
+## 📈 Power BI Dashboard
+
+The dashboard provides an executive-level view of customer behavior through:
+
+* KPI cards
+* Subscription analysis
+* Revenue by category
+* Sales by category
+* Gender analysis
+* Category filtering
+* Shipping-type analysis
+* Revenue by age group
+* Sales by age group
+
+The dashboard also includes filters for **Subscription Status, Gender, Category, and Shipping Types**.
+
+### Dashboard Preview
+
+![Customer Behavior Dashboard](images/dashboard.png)
+
+---
+
+## 🗄️ SQL Analysis
+
+The SQL component focuses on converting business questions into analytical queries using:
+
+* `GROUP BY`
+* `ORDER BY`
+* Aggregate functions such as `SUM()`, `AVG()` and `COUNT()`
+* Conditional logic using `CASE`
+* Common Table Expressions (`WITH`)
+* Window functions using `ROW_NUMBER()`
+* Subqueries
+* Percentage calculations
+
+For example, customer segmentation uses a `CASE` expression, while category-level product ranking uses `ROW_NUMBER()` with partitioning.
+
+---
+
+## 🐍 Python Analysis
+
+The Jupyter Notebook contains the Python-based analysis component of the project.
+
+Python is used as part of the analytical workflow before presenting the final insights through SQL analysis and Power BI visualization.
+
+---
+
+## 📂 Repository Structure
+
+```text
+customer-behavior-analysis/
+│
+├── README.md
+│
+├── Python/
+│   └── Customer_Behavior_Analysis.ipynb
+│
+├── SQL/
+│   └── Customer_Behavior_SQL_Queries.pdf
+│
+├── Dashboard/
+│   └── Customer_Behavior_Dashboard.pdf
+│
+└── images/
+    └── dashboard.png
+```
+
+---
+
+## 💡 Business Value
+
+The analysis can support business teams in areas such as:
+
+* Customer segmentation
+* Customer retention
+* Subscription strategy
+* Product performance evaluation
+* Discount strategy
+* Revenue analysis
+* Customer purchasing behavior
+* Category-level performance monitoring
+
+The combination of SQL analysis and Power BI reporting makes the project suitable for demonstrating practical **data analyst workflow and business-oriented analytical thinking**.
+
+---
+
+## 🚀 Analytical Workflow
+
+```text
+Raw Customer Data
+       ↓
+Data Preparation
+       ↓
+Exploratory Analysis using Python
+       ↓
+Business Questions
+       ↓
+SQL Analysis
+       ↓
+KPI & Metric Development
+       ↓
+Power BI Visualization
+       ↓
+Business Insights
+```
+
+---
+
+## 📌 Project Deliverables
+
+### 1. Python Notebook
+
+Contains the Python-based customer behavior analysis.
+
+### 2. SQL Analysis
+
+Contains queries addressing 10 business questions related to customer behavior, products, discounts, subscriptions, segmentation, and revenue.
+
+### 3. Power BI Dashboard
+
+Provides an interactive visual summary of customer KPIs, sales, revenue, subscription status, categories, shipping types, gender, and age groups.
+
+---
+
+## 🔮 Possible Future Analysis
+
+The project can be extended with:
+
+* Customer Lifetime Value (CLV)
+* Customer retention rate
+* Cohort analysis
+* Monthly/seasonal purchasing trends
+* Revenue forecasting
+* Churn prediction
+* RFM customer segmentation
+* Discount impact on profitability
+* Subscription conversion analysis
+
+---
+
+## 📎 Project Files
+
+* [Python Analysis](Python/Customer_Behavior_Analysis.ipynb)
+* [SQL Queries](SQL/Customer_Behavior_SQL_Queries.pdf)
+* [Power BI Dashboard](Dashboard/Customer_Behavior_Dashboard.pdf)
+
